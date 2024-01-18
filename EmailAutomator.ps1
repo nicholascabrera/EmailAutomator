@@ -13,8 +13,6 @@ Param (
     [string]$Name
 )
 
-Write-Host `"$CallerPrefix`"
-
 If (-not (($CallerPrefix -eq 'Mr.') -or ($CallerPrefix -eq 'Ms.') -or ($CallerPrefix -eq 'Mrs.'))){
     Write-Host "Please enter a valid caller prefix."
 } Else {
